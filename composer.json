@@ -1,0 +1,14 @@
+{
+  "name": "cyan/smol",
+  "authors": [
+    {
+      "name": "Cyan Froste",
+      "email": "cyan14froste@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "app\\": "./"
+    }
+  }
+}
