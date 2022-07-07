@@ -1,18 +1,13 @@
 import axios from 'axios'
-import { version } from './utils'
+import { select } from './utils'
 
-const versionEl = document.querySelector('.version') as HTMLSpanElement
-const descriptionEl = document.querySelector(
-  '.description'
-) as HTMLParagraphElement
-const linksContainerEl = document.querySelector('.links') as HTMLDivElement
-
-versionEl.textContent = `Version ${version()}`
+const versionEl = select('.version')
+const linksContainerEl = select('.links')
 
 axios.get('/api/example').then(({ data }) => {
-  descriptionEl.textContent = data.description
+  versionEl!.textContent = `Version ${data.version}`
 
-  linksContainerEl.innerHTML = `Powered by
+  linksContainerEl!.innerHTML = `Powered by
     <a class="text-sky-500" href=${data.links.tailwind}>Tailwind</a> &
     <a class="text-sky-500" href=${data.links.typescript}>Typescript</a>
   `

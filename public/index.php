@@ -17,7 +17,7 @@ $app->router->get('/', [ExampleController::class, 'example']);
 
 $app->router->get('/api/example', function (Request $request, Response $response) {
   $response->json([
-    'description' => 'A Very Minimal PHP Framework that is designed to create very simple applications or websites for small companies or individuals',
+    'version' => '1.0.1',
     'links' => ['tailwind' => 'https://tailwindcss.com/', 'typescript' => 'https://www.typescriptlang.org/']
   ]);
 });
