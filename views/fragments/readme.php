@@ -75,6 +75,6 @@ use app\components\Code; ?>
 <?php new Code([
   'content' => 'node make &lt;name&gt; -type<br>' .
     'Eg.<br><br>' .
-    'npm run make -r HomeController   // Controller<br>' .
-    'npm run make -c Button           // Component</code>'
+    'node make -r HomeController   // Controller<br>' .
+    'node make -c Button           // Component</code>'
 ]) ?>

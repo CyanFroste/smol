@@ -8,8 +8,6 @@ A Very Minimalistic PHP Framework for prototyping with TailwindCSS and Typescrip
 
 ### Prerequisites
 
----
-
 - [Node](https://nodejs.org/en/)
 
 - [PHP](https://www.apachefriends.org/)
@@ -19,8 +17,6 @@ A Very Minimalistic PHP Framework for prototyping with TailwindCSS and Typescrip
 <br>
 
 ### Installation
-
----
 
 1. Clone the repo
 
@@ -52,8 +48,6 @@ npm start
 
 ### Usage
 
----
-
 - Register new routes in `public/index.php`
 
 - Add controllers inside `./controllers`
@@ -80,8 +74,6 @@ npm run ts   // production build
 
 ## Make
 
----
-
 A small utility to generate boilerplate code for controllers and components
 
 Usage - From root directory, run
@@ -90,6 +82,6 @@ Usage - From root directory, run
 node make <name> -type
 
 Eg.
-npm run make -r HomeController // Controller
-npm run make -c Button         // Component
+node make -r HomeController // Controller
+node make -c Button         // Component
 ```
